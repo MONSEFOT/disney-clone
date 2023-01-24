@@ -1,0 +1,75 @@
+.custom-slider {
+    margin-top: 20px;
+
+    &>button {
+        opacity: 0;
+        height: 100%;
+        width: 5vw;
+        z-index: 1;
+
+        &:hover {
+            opacity: 1;
+            transition: opacity 0.2s ease 0s;
+        }
+    }
+
+    ul li button {
+        &::before {
+            font-size: 10px;
+            color: rgb(150, 150, 150);
+        }
+    }
+
+    ul li.slick-active button::before {
+        color: white;
+    }
+
+    .slick-list {
+        overflow: initial;
+    }
+
+    .slick-prev {
+        left: -75px;
+    }
+
+    .slick-next {
+        right: -75px;
+    }
+
+    .slider-wrap {
+        position: relative;
+        border: 4px solid transparent;
+        border-radius: 10px;
+        transition: border-color 0.3s ease-out 0s;
+        overflow: hidden;
+
+
+        &:hover {
+            border-color: rgba(255, 255, 255, 0.952);
+        }
+
+        &>a {
+            box-shadow: -3px -4px 93px 34px rgba(0, 0, 0, 0.75) inset;
+            -webkit-box-shadow: -3px -4px 93px 34px rgba(0, 0, 0, 0.75) inset;
+            -moz-box-shadow: -3px -4px 93px 34px rgba(0, 0, 0, 0.75) inset;
+        }
+
+        &>a>.show-backgound {
+            max-width: 100%;
+
+        }
+
+        &>a>.show-desc {
+            position: absolute;
+            gap: 10%;
+            top: 20%;
+            left: 10%;
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out 0s;
+
+            &>.show-logo {
+                width: 35%;
+            }
+        }
+    }
+}

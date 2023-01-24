@@ -1,0 +1,66 @@
+.container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    .content {
+        margin-bottom: 10vw;
+        width: 100%;
+        position: relative;
+        min-height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        padding: 80px 40px;
+        height: 100vh;
+
+        .cta {
+            max-width: 650px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .cta-logo {
+                width: 250px;
+            }
+
+            .cta-sub-price-description {
+                font-size: x-large;
+                color: #e1e6f0;
+            }
+
+            .cta-sub-button {
+                width: 100%;
+                width: 366px;
+                background: linear-gradient(93.87deg, #095ae6, #062794);
+                color: #d1e8ff;
+                font-weight: bold;
+                padding: 15px;
+                border-radius: 5px;
+                border: none;
+                transition: scale 0.5s;
+                cursor: pointer;
+
+                &:hover {
+                    scale: 103%;
+                }
+            }
+        }
+
+        .bg-img {
+            height: 100vh;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            background-image: url("https://img1.hotstarext.com/image/upload/f_auto,q_90,w_3840/feature/onboarding/post-disney-plus-days-mena-web.png");
+        }
+    }
+}
