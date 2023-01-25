@@ -64,12 +64,28 @@
             gap: 10%;
             top: 20%;
             left: 10%;
-            opacity: 1;
-            transition: opacity 0.3s ease-in-out 0s;
 
             &>.show-logo {
                 width: 35%;
             }
         }
+    }
+
+    .slick-active {
+        .show-desc {
+            animation: slick-active-logo-animation 0.5s ease-in 0s;
+            animation-iteration-count: 1;
+        }
+    }
+}
+
+@keyframes slick-active-logo-animation {
+    from {
+        transform: translateX(-5%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
     }
 }
