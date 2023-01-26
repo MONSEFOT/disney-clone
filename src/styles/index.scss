@@ -1,3 +1,5 @@
+@import "_vars";
+
 html {
   scroll-behavior: smooth;
 }
@@ -6,8 +8,8 @@ html {
 }
 
 body {
-  background-color: #040714;
-  color: #f9f9f9;
+  background-color: $bg-blue-color;
+  color: $text-white-color;
 
   font-family: Avenir-Roman, sans-serif;
   margin: 0;
@@ -15,7 +17,7 @@ body {
 }
 
 a {
-  color: #f9f9f9;
+  color: $text-white-color;
   text-decoration: none;
 }
 
